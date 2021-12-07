@@ -66,7 +66,8 @@ empOne.getSchedule()
 */
 
 //CODE HERE
-const empTwo = {...empOne}
+const empTwo = {...empOne} //this doesn't create a new instance of class employee, but an object. I did quite a bit of googling and can't figure out how to use the spread operator to create a copied instance of this class
+empTwo.name = "Nick";
 // console.log(empOne)
 // console.log(empTwo)
 
@@ -121,7 +122,7 @@ class Manager extends Employee {
 */
 
 //CODE HERE
-const manager = new Manager("Winston", "weeday morning, weekday afternoons", ["Cece", "Schmidt"]);
+const manager = new Manager("Winston", "weekday morning, weekday afternoons", ["Cece", "Schmidt"]);
 
 /*
     Call the `getEmployees` method on the
